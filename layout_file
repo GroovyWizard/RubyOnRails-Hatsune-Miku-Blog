@@ -1,26 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> | Hatsune Miku Blog</title>
+    <title>SampleApp</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-   
-   <div id="nav">
-   <%= link_to "Hatsune", "/static_pages/hatsune" %>
-   <%= link_to "Help", "/static_pages/help" %> 
-   <%= link_to "Home", "/static_pages/home" %>
-   <%= link_to "About", "/static_pages/about" %>
-   <%= link_to "Contact", "/static_pages/contact" %>
-   </div>
-   
-   
-   
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  
-  
   </head>
 
   <body>
