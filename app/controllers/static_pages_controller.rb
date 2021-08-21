@@ -8,9 +8,6 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def hatsune 
-  end
-
   def contact
   end
 end
