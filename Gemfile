@@ -5,6 +5,7 @@ ruby '3.0.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4'
+gem 'bcrypt', '3.1.13'
 gem 'rexml', '~> 3.2', '>= 3.2.4'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 # Use Puma as the app server
