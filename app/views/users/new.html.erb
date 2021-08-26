@@ -1,3 +1,25 @@
 <% provide(:title, 'Sign up') %>
 <h1>Sign up</h1>
-<p class=text-center>Ready to start your miku worshipping? I am for sure! Join us!</p>
+
+<div class="row">
+    <div class= "col-md-6 col-md-oform_fieldsform_fieldsset-3">
+        <%= form_with(model: @user, local:true) do |form_fields| %>
+            <%= render 'shared/error_messages' %>
+            
+            <%= form_fields.label :name %>
+            <%= form_fields.text_field :name, class: 'form-control' %>
+
+            <%= form_fields.label :email %>
+            <%= form_fields.text_field :email, class: 'form-control' %>
+
+           
+            <%= form_fields.label :password, "Password" %>
+            <%= form_fields.password_field :password, class: 'form-control' %>
+            
+            <%= form_fields.label :password_confirmation, "Confirmation" %>
+            <%= form_fields.password_field :password_confirmation, class: 'form-control' %>
+
+            <%= form_fields.submit "Create my account", class: "btn btn-primary" %>
+        <% end %>
+    </div>
+</div>
