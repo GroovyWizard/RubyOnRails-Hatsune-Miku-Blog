@@ -30,7 +30,7 @@ p {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 150px;
 }
 
 section {
@@ -46,21 +46,25 @@ textarea {
   margin-bottom: 10px;
 }
 
-#logo {
-  font-weight: bold;
-  font-size: larger;
+
+
+#header  {
+  background-color: aqua !important;
+  background-position: center;
+  background-size: cover;
   color: black;
-  margin: 250px;
-  text-transform: uppercase;
-  background-position: center center;
-  height: 24px;
-  line-height: 24px;
-  width: 24px;
+  font-weight: bolder;  
+  padding-bottom: 70px !important;
+  margin-bottom: 20px !important;
 }
 
-#header {
-  background-color: aqua;
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
 }
+
+
 
 .testimonial_image {
   text-align: center;
@@ -153,3 +157,4 @@ margin: 0 0 30px 0;
 color: $state-danger-text;
 }
 }
+
