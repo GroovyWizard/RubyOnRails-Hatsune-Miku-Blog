@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   def create 
     @user = User.new(user_params)
     if @user.save 
+      log_in @user
       flash[:success] = "Welcome to Hatsune Miku blog! We tailored everything for you, hope you like it <3"  
       redirect_to @user
     else
